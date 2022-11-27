@@ -32,7 +32,7 @@ def get_links(text):
 
 
 if __name__ == "__main__":
-    for a in get_links("python"): #вместо Javascript любой запрос
+    for a in get_links("python"): #вместо python любой запрос
         print(a)
         count_of_page += 1
         print(count_of_page)
