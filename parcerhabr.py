@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import fake_useragent
 
-count_of_post = 0
+count_of_page = 0
 def get_links(text):
     user_agent =fake_useragent.UserAgent()
     data = requests.get(
@@ -35,8 +35,7 @@ if __name__ == "__main__":
     for a in get_links("python"): #вместо Javascript любой запрос
         print(a)
         count_of_page += 1
-        print(count_of_post)
-
+        print(count_of_page)
 
 
 
